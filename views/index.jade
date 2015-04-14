@@ -1,0 +1,10 @@
+html
+	head
+		title Slack Bot
+	body
+		if posted == true
+			h3 Your message was successfully posted
+		form(method="post", action="/posting")
+			input(type="text", placeholder="channel",name="channel")
+			input(type="text", placeholder="message",name="message")
+			input(type="submit", value="Submit")
